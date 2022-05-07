@@ -12,7 +12,7 @@
 
 circos.cnvplot <- function(data)
 {
-  for(p in c("circlize")) {
+  for(p in c("circlize","ComplexHeatmap")) {
     if (length(grep(paste("^package:", p, "$", sep=""), search())) == 0) {
       if (!requireNamespace(p, quietly = TRUE))
         warning(paste("circos.cnvplot needs package `", p, "' to be fully functional; please install", sep=""))
